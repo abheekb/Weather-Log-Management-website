@@ -1,0 +1,6 @@
+‘’70 bar’create table Users (User_id int, Name varchar(255), E_mail varchar(255), Password varchar(255), City varchar(255), Location varchar(255), primary key(User_id));
+create table Bangalore (Day varchar(255),PPT varchar(255), Windspeed varchar(255), Pressure varchar(255), Temperature varchar(255), Humidity varchar(255), primary key(Day));
+create table Chennai (Day varchar(255),PPT varchar(255), Windspeed varchar(255), Pressure varchar(255), Temperature varchar(255), Humidity varchar(255), primary key(Day));
+create table Mumbai (Day varchar(255),PPT varchar(255), Windspeed varchar(255), Pressure varchar(255), Temperature varchar(255), Humidity varchar(255), primary key(Day));
+create table Delhi (Day varchar(255),PPT varchar(255), Windspeed varchar(255), Pressure varchar(255), Temperature varchar(255), Humidity varchar(255), primary key(Day));
+create table Kolkata (Day varchar(255),PPT varchar(255), Windspeed varchar(255), Pressure varchar(255), Temperature varchar(255), Humidity varchar(255), primary key(Day));

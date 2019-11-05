@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Weather in the past week!</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="{{ url_for('static', filename='weather/fonts/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='weather/style.css') }}">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="{{ url_for('static', filename='weather/images/logo.png') }}" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">Weather Manager</h1>
+							<small class="site-description"></small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="http://127.0.0.1:5000">Home</a></li>
+							<li class="menu-item current-menu-item"><a href="">Weather History</a></li>
+							<li class="menu-item"><a href="http://127.0.0.1:5000/ChangeCity">Change City</a></li>
+							<!-- <li class="menu-item"><a href="http://127.0.0.1:5000/Kolkata">Contact</a></li> -->
+						
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> <!-- .site-header -->
+
+			<main class="main-content">
+				<div class="container">
+					<div class="breadcrumb">
+						<a href="index.html">Home</a>
+						<span>Weather History</span>
+					</div>
+				</div>
+				
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<div class="row">
+							<div class="content col-md-8">
+								<div class="post">
+									<h2 class="entry-title"><font face="Courier"> Weekly weather for Mumbai </font></h2>
+									<div class="featured-image"><img src="{{ url_for('static', filename='imageslab/image1.jpeg') }}" alt=""></div>
+									<p><font face="Courier">The Climate of Mumbai is a tropical, wet and dry climate. Mumbai's climate can be best described as moderately hot with high level of humidity. Its coastal nature and tropical location ensures temperatures do not fluctuate much throughout the year</font> </p>
+									<a href="http://127.0.0.1:5000/Mumbai" class="button">Click to view</a>
+								</div>
+
+								<div class="post">
+									<h2 class="entry-title"><font face="Courier">Weekly weather for Bangalore</font></h2>
+									<div class="featured-image"><img src="{{ url_for('static', filename='imageslab/image2.jpeg') }}" alt=""></div>
+									<p><font face="Courier">Due to its elevation, Bangalore enjoys a pleasant and equable climate throughout the year. However, due to deforestation, it is getting warmer in recent times</font></p>
+									<a href='http://127.0.0.1:5000/Bangalore' class="button">Click to view</a>
+
+								</div>
+
+								<div class="post">
+									<h2 class="entry-title"><font face="Courier">Weekly weather for Chennai</font></h2>
+									<div class="featured-image"><img src="{{ url_for('static', filename='imageslab/image_chennai.jpeg') }}" alt=""></div>
+									<p><font face="Courier">Chennai has a dry-summer tropical wet and dry climate. The city lies on the thermal equator and is also on the coast, which prevents extreme variation in seasonal temperature.</font></p>
+									<a href="http://127.0.0.1:5000/Chennai" class="button">Click to view</a>
+								</div>
+								<div class="post">
+									<h2 class="entry-title"><font face="Courier">Weekly weather for Kolkata</font></h2>
+									<div class="featured-image"><img src="{{ url_for('static', filename='imageslab/image_kolkata.jpeg') }}" alt=""></div>
+									<p><font face="Courier">Kolkata has a Tropical wet-and-dry climate. Summers are hot and humid with temperatures in the low 30's and during dry spells the maximum temperatures often exceed 40 °C during May and June.</font></p>
+									<a href="http://127.0.0.1:5000/Kolkata" class="button">Click to view</a>
+								</div>
+								<div class="post">
+									<h2 class="entry-title"><font face="Courier">Weekly weather for Delhi</font></h2>
+									<div class="featured-image"><img src="{{ url_for('static', filename='imageslab/image_delhi.jpeg') }}" alt=""></div>
+									<p><font face="Courier">The climate of Delhi is an overlap between monsoon-influenced humid subtropical and semi-arid, with high variation between summer and winter temperatures and precipitation</font></p>
+									<a href="http://127.0.0.1:5000/Delhi" class="button">Click to view</a>
+								</div>
+							</div>
+							<!----
+							<div class="sidebar col-md-3 col-md-offset-1">
+								<div class="widget">
+									<h3 class="widget-title">Hot News</h3>
+									<ul class="arrow-list">
+										<li><a href="#">Accusamus dignissimos</a></li>
+										<li><a href="#">Ducimus praesentium</a></li>
+										<li><a href="#">Voluptatum deleniti corrupti</a></li>
+										<li><a href="#">Wuos dolores excepturi sint</a></li>
+										<li><a href="#">Occaecati provident dolor</a></li>
+									</ul>
+								</div>
+
+								<div class="widget">
+									<h3 class="widget-title">Categories</h3>
+									<ul class="arrow-list">
+										<li><a href="#">Nemo enim ipsam</a></li>
+										<li><a href="#">Voluptatem voluptas</a></li>
+										<li><a href="#">Aspernatur aut odit</a></li>
+										<li><a href="#">Consequuntur magni</a></li>
+										<li><a href="#">Dolores ratione</a></li>
+										<li><a href="#">Voluptatem nesciunt</a></li>
+										<li><a href="#">Neque porro quisquam</a></li>
+										<li><a href="#">Dolorem ipsum quia</a></li>
+									</ul>
+								</div>
+
+								<div class="widget top-rated">
+									<h3 class="widget-title">Top rated posts</h3>
+									<ul>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main> <!-- .main-content -->
+
+			<!-- <footer class="site-footer"> -->
+				<!-- <div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div> -->
+						<!-- <div class="col-md-3 col-md-offset-1">
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div> -->
+
+				
+			<!-- 	</div>
+			</footer> .site-footer
+		</div> -->
+		
+		<script src="{{ url_for('static', filename='weather/js/jquery-1.11.1.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='weather/js/plugins.js') }}"></script>
+		<script src="{{ url_for('static', filename='weather/js/app.js') }}"></script>
+		
+	</body>
+
+</html>
